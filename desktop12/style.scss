@@ -1,0 +1,439 @@
+$primary-color: #99EA48;
+$secondary-color: #191F33;
+
+.header {
+    display: flex;
+    text-align: center;
+    padding: 30px 80px 30px 80px;
+    z-index: 1;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    gap: 0px;
+    border-radius: 3px 3px 53px 3px;
+    opacity: 0px;
+  }
+
+  .rectangle1,
+  .rectangle2 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    gap: 0px;
+    border-radius: 3px 3px 53px 3px;
+    opacity: 0px;
+    background: $primary-color;
+  }
+
+  .rectangle3 {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 11.5px;
+    left: 11px;
+    gap: 0px;
+    border-radius: 3px 3px 53px 3px;
+    opacity: 0px;
+    background: $secondary-color;
+  }
+
+  .mac {
+    position: absolute;
+    font-family: Manrope;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 32.78px;
+    letter-spacing: -0.05em;
+    text-align: left;
+    left: 41px;
+    top: 3px;
+  }
+
+  .menu_bar {
+    position: relative;
+    display: inline-flex;
+    width: 800px;
+    height: auto;
+    gap: 30px;
+    opacity: 0px;
+  }
+
+  .menu-item {
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    width: auto;
+    opacity: 0px;
+    margin-top: 5px;
+  }
+
+  .vector {
+    padding-top: 13px;
+    padding-left: 5px;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  
+    .dropbtn {
+      background-color: white;
+      border: none;
+      p {
+        font-size: 16px;
+      }
+    }
+  
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      margin-left: 5px;
+      background-color: white;
+      z-index: 1;
+      flex-direction:column;
+  
+      a {
+        color: $secondary-color;
+        text-decoration: none;
+  
+        &:hover {
+          background-color: $primary-color;
+        }
+      }
+    }
+  
+    &:hover .dropdown-content {
+      display: block;
+    }
+  }
+  
+  .r-nav {
+    position: absolute;
+    margin-top: 10px;
+    right: 5%;
+    display: inline-flex;
+    width: 215px;
+    height: 50px;
+    gap: 9px;
+    opacity: 0px;
+
+  }
+
+  button.st {
+    width: 156px;
+    height: 45px;
+    padding: 13px 16px 13px 16px;
+    gap: 32px;
+    border-radius: 30px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    font-size: 16px;
+    background-color: white;
+    transition: background-color 0.5s;
+  }
+  
+  button.st:hover {
+    background-color: $primary-color; 
+  }
+  
+  .bell {
+    position: relative;
+    width: 15px;
+    height: 20px;
+    padding: 13px 16px 13px 16px;
+    gap: 32px;
+    border-radius: 50px;
+    opacity: 0px;
+    background-color: $secondary-color;
+    transition: background-color 0.5s;
+    .bell-icon{
+      position: absolute;
+      left: 12px;
+      span {
+        color: white;
+      }
+    }
+  }
+  .bell:hover {
+    background-color: $primary-color;
+    .bell-icon span{
+      color: $secondary-color;
+    }
+  }
+
+  .contain {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    top: 163px;
+    left: 80px;
+    gap: 48px;
+}
+
+.tittle {
+    position: absolute;
+    top: 6%;
+    width: 50%;
+    height: 50%;
+    opacity: 0px;
+    margin: 0 0 0 4%;
+    z-index: 2;
+    p {
+        font-family: Plus Jakarta Sans;
+        font-size: 110px;
+        font-weight: 600;
+        line-height: 79.2px;
+        letter-spacing: -0.03em;
+        text-align: left;
+    }
+}
+
+.sub-tittle {
+    margin-top: 17%;
+    margin-left: 4%;
+    p {
+        font-size: 25px;
+        width: 760px;
+        height: 41px;
+        gap: 0px;
+        opacity: 0px;
+        color: gray;
+    }
+}
+
+.content-click {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    .callbtn {
+        padding: 8%;       
+        button {
+            position: relative;
+            height: 60px;
+            width: 320px;
+            padding: 10px 20px;
+            background-color: $secondary-color;
+            color: #fff;
+            border: none;
+            border-radius: 75px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            font-size: 22px ;
+            transition: background-color 0.5s;
+            p {
+                position: absolute;
+                margin: 0;
+                margin-right: 5px;
+                left: 70px;
+                font-weight: 500;
+            }
+
+            .schedule_btn_arrow {
+                position: absolute;
+                right: 70px;
+                top: 16px;
+                font-size: 24px;
+            }
+            &:hover {                
+                color: $secondary-color;
+                 background-color: $primary-color;           
+            }
+
+        }
+                    
+    }
+    .viewcs {
+        position: absolute;
+        left: 27%;
+        top: 67%;
+        a {
+            color: #000;
+            font-size: 22px;
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+.ad {
+    position: absolute;
+    display: flex;
+    right: 27%;
+    bottom: 69%;
+
+    .trending-up {
+        position: relative;
+        background-color: black;
+        color: $primary-color;
+        height: 120px;
+        width: 120px;
+        border-radius: 100%;
+        z-index: 2;
+        box-shadow: 2px 20px 10px rgba(0, 0, 0, 0.2);
+
+        span {
+            position: absolute;
+            font-size: 70px;
+            right: 25px;
+            top: 25px
+        }
+    }
+    .ad_rectangle {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        background-color: #00000033;
+        border-radius: 100% 10px 20px 10px;
+        right: -40%;
+        top: 25%;
+        z-index: 1;
+    }
+    .reliability {
+        position: absolute;
+        background-color: #F0F0F0;
+        height: 300px;
+        width: 300px;
+        top: 30px;
+        left: 170%;
+        text-align: center;
+        b {
+            font-size: 110px;
+        }
+        p {
+            font-size: 20px;
+            margin: 16px;
+        }
+        .vector_behind {
+            background-color: #D9D9D9;
+            height: 6.65px;
+            width: 245px;
+            margin-left: 27.5px;
+            margin-top: 40px;
+        }
+        .vector_front {
+            position: absolute;
+            background-color: $secondary-color  ;
+            height: 6.65px;
+            width: 165px;
+            left: 27px;
+            bottom: 41px;
+        }
+    }
+    .sale {
+        position: absolute;
+        background-color: black;
+        height: 250px;
+        width: 635px;
+        bottom: -430%;
+        right: -385px;
+        border-radius: 20px;
+        .sale_text {
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            margin-top: 50px;
+            margin-left: 30px;
+            width: 400px;
+            color: white;
+            .sub {
+                display:flex;
+                align-items: baseline;
+                position: relative;
+                .stick{
+                    position: absolute;
+                    background-color: white;
+                    height: 1px;
+                    width: 60px;
+                    top: 20px;
+                }
+                p { 
+                    position: absolute;
+                    top: -8px;
+                    left: 70px;
+                    font-size: 18px;
+                }
+                
+            }
+            .bigtxt {
+                position: absolute;
+                font-size: 40px;
+                top: 110px;
+                width: 300px;
+            }
+        }
+        
+        .diagram {
+            .dia1 {
+                position: absolute;
+                background-color: rgb(178, 216, 143);
+                height: 100px;
+                width: 70px;
+                bottom: -45.05px;
+                right: -120px
+            }
+            .dia2 {
+                position: absolute;
+                background-color: rgb(154, 197, 114);
+                height: 140px;
+                width: 70px;
+                bottom: -45.05px;
+                right: -200px
+            }
+            .dia3 {
+                position: absolute;
+                background-color: rgb(101, 153, 53);
+                height: 180px;
+                width: 70px;
+                bottom: -45.05px;
+                right: -280px
+            }
+        }    
+        
+    }
+
+    
+}
+
+.footer {
+    position: absolute;
+    display: flex;
+    left: -1070px;
+    bottom: -20px;
+}
+
+.footer_text {
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.companies {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    gap: 60px;
+    width: 500px;
+    padding-left: 50px;
+    .companylogo {
+        width: 200px; 
+        height: 40px;     
+    }
+}
+
+
+
+
+
+
+
